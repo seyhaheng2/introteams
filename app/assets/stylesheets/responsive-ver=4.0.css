@@ -1,0 +1,204 @@
+@media (max-width: 1024px) {
+	
+	#nav-toggle {
+		float: none !important;
+		cursor: pointer;
+		display:block !important;
+	}
+
+	#nav{ 
+		text-align: center;
+		padding-bottom:30px;
+	 	width: 100%!important;
+	}
+
+	#nav li { 
+		float: none !important;
+		margin:0px 0 20px 0;
+	}
+
+	#header {
+		background-color: rgba(255,255,255,1.0) !important;
+		opacity:1.0;
+	}
+
+	#logo-small {
+		overflow:hidden;
+		float:left;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.subscribe-form input[type="text"], .subscribe-form input[type="email"] {
+		font-size: 26px;
+	}
+
+}
+
+@media (max-width: 1024px) and (min-width: 600px) {
+
+	#home .btn-primary {
+		margin-right: 0;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	.offsetBottomBig { padding-bottom: 12% }
+	.offsetTopBig { padding-top: 12% }
+
+	.offsetBottomS { padding-bottom: 12% }
+	.offsetTopS { padding-top: 12% }
+
+	.services .services-item {
+		margin-bottom: 50px;
+	}
+
+	.features .feature-item h3 {
+		margin-left: 0;
+	}
+
+	.features {
+		text-align: center;
+	}
+
+	.features .feature-item i {
+		float: none;
+		margin-bottom: 20px;
+	}
+
+	.features .feature-item p {
+		margin-left: 0;
+	}
+
+	.os-big li {
+		margin-right: 0;
+	}
+
+}
+
+@media (max-width: 640px) {
+
+	#home .big-text #text-rotator li span {
+		font-size: 26px;
+		font-weight: 300;
+		color: #fff;
+		line-height: 38px;
+	}
+    
+    h1#logo {
+		margin-bottom: 30px;
+	}
+
+}
+
+
+@media (max-width: 600px) {
+
+	#home .content-right {
+		float: none;
+		margin-bottom: 50px;
+	}
+
+	.services h3 {
+		margin-top: 20px;
+	}
+
+	.subscribe-form .btn {
+		width: 100%;
+	}
+
+	.subscribe-form input[type="text"], #subscribe-form input[type="email"] {
+		text-align: center;
+	}
+
+	#home .btn-primary {
+		margin-right: 0;
+	}
+
+	.app-pres .gallery-pres {
+		margin-bottom: 50px;
+	}
+
+	.feedback .comment {
+		font-size: 14px;
+	}
+
+}
+
+@media (max-width: 568px) {
+
+	#nav {
+		max-height: 240px;
+		overflow: auto;
+	}
+
+	#home .small-text {
+		display: none;
+	}
+
+}
+
+
+@media (max-width: 480px) {
+
+	.ci-phone {
+		font-size: 22px;
+		padding: 20px 48px;
+	}
+
+}
+
+
+@media (max-width: 384px) {
+
+	.offsetBottomL { padding-bottom: 20% }
+	.offsetTopL { padding-top: 20% }
+
+	.style-selector {
+		top: 80px;
+	}
+
+	ul.os li {
+		margin-right: 20px;
+    }
+
+	#logo.offsetBottomL, h1.offsetBottomL, p.offsetBottomL {
+		padding-bottom: 8%;
+	}
+
+	.feature-item {
+		text-align: center;
+	}
+
+	.feature-item p {
+		margin-left: 0;
+	}
+
+	.feature-item span {
+		float: none;
+		margin-right: 0;
+	}
+
+	.ci-phone {
+		font-size: 22px;
+		padding: 20px 48px;
+	}
+
+	.app-pres .btn { 
+		display: block
+	}
+
+	.subscribe-form input[type="text"], .subscribe-form input[type="email"] {
+		font-size: 18px;
+	}
+
+	#footer ul.footer-links li:nth-child(3) {
+		margin-right: 0;
+	}
+
+
+}
