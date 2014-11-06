@@ -16,63 +16,6 @@
  */
 
 
-a {
-	color: #DC143C;	
-}
 
-.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary:focus {
-	background: #c11135;
-}
 
-.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
-	background: #DC143C;
-}
 
-.solid-bg-color {
-	background-color: #DC143C;
-}
-
-hr.head-separator {
-	border-color: #DC143C;
-}
-
-.btn-primary {
-	background-color: #ce1338;
-}
-
-ul.os li:hover i {
-	color: #fff;
-	opacity: 1;
-}
-
-#nav a:hover {
-	color: #DC143C;
-}
-
-.services h3, .services-item h3 {
-	color: #DC143C;
-}
-
-.services-item:hover i {
-	color: #DC143C;
-	border-color: #DC143C;
-}
-
-.feat-list li i {
-	background: #DC143C;
-}
-.feature-item i {
-	background: #DC143C;
-}
-
-.os-big li:hover {
-	background-color: #DC143C;
-}
-
-.ci-address a {
-	color: #fff;
-}
-
-.ci-mail a {
-	color: #fff;
-}
