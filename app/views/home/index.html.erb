@@ -14,7 +14,7 @@
 						<a class="navbar-brand" href="index.html">
 						<%= image_tag "light-logo-2.png", class: "logo"%>
 						<%= image_tag "light-logo.png", class: "logo2"%>
-
+						</a>
 					</div>
 					
 					<!-- Main Menu -->
@@ -137,13 +137,13 @@
 										
 											<!-- Front Side -->
 											<div class="flip-content">
-												<img alt="" src="assets/p23.jpg">
+												<%= image_tag "p23.jpg"%>
 											</div>
 											
 											<!-- Back Side -->
 											<a href="portfolio-slideshow.html">
 												<div class="flip-hover-content">
-													<img alt="" src="assets/p23.jpg">
+													<%= image_tag "p23.jpg"%>
 													<div class="overlay">
 														<h3>Portfolio Slideshow</h3>
 														<p>This is a sample project with OWL slideshow. Don't miss this new one page loading website!</p>
@@ -188,12 +188,12 @@
 										
 											<!-- Front Side -->
 											<div class="flip-content">
-												<img alt="" src="assets/p12.jpg">
+												<%= image_tag "p12.jpg"%>
 											</div>
 											
 											<!-- Back Side -->
 											<div class="flip-hover-content">
-												<img alt="" src="assets/p12.jpg">
+												<%= image_tag "p12.jpg"%>
 												<div class="overlay">
 													<div class="spacer small"></div>
 													<p>You can put only an image without a link here. Of course if you don't have too much content<BR><BR> This <strong>white overlay</strong> is optional too. It's easy and flexible. Just imagine your content here...</p>
@@ -262,13 +262,13 @@
 										
 											<!-- Front Side -->
 											<div class="flip-content">
-												<img alt="" src="assets/p17.jpg">
+												<%= image_tag "p17.jpg"%>
 											</div>
 											
 											<!-- Back Side -->
 											<a href="services-2.html">
 												<div class="flip-hover-content">
-													<img alt="" src="assets/p17.jpg">
+													<%= image_tag "p17.jpg"%>
 													<div class="overlay">
 														<h3>Services Alternative</h3>
 														<p>This is another example of services page. We have various elements for services page.</p>
@@ -313,13 +313,13 @@
 										
 											<!-- Front Side -->
 											<div class="flip-content">
-												<img alt="" src="assets/p16.jpg">
+												<%= image_tag "p16.jpg"%>
 											</div>
 											
 											<!-- Back Side -->
 											<a href="blog-list.html">
 												<div class="flip-hover-content">
-													<img alt="" src="assets/p16.jpg">
+													<%= image_tag "p16.jpg"%>
 													<div class="overlay">
 														<h3>Classic Blog Style</h3>
 														<p>A blog could be in grid or classic style. This one is the classic style. <strong>Click to see it!</strong></p>
@@ -338,13 +338,13 @@
 										
 											<!-- Front Side -->
 											<div class="flip-content">
-												<img alt="" src="assets/p22.jpg">
+												<%= image_tag "p22.jpg"%>
 											</div>
 											
 											<!-- Back Side -->
 											<a href="blog-sidebar.html">
 												<div class="flip-hover-content">
-													<img alt="" src="assets/p22.jpg">
+													<%= image_tag "p22.jpg"%>
 													<div class="overlay">
 														<h3>Blog with Sidebar</h3>
 														<p>This is a blog with a featuring image on it. You may have image or slideshow on each post.</p>
@@ -389,13 +389,13 @@
 										
 											<!-- Front Side -->
 											<div class="flip-content">
-												<img alt="" src="assets/p18.jpg">
+												<%= image_tag "p18.jpg"%>
 											</div>
 											
 											<!-- Back Side -->
 											<a href="portfolio-2.html">
 												<div class="flip-hover-content">
-													<img alt="" src="assets/p18.jpg">
+													<%= image_tag "p18.jpg"%>
 													<div class="overlay">
 														<h3>Portfolio Single</h3>
 														<p>A new project is risening up in our portfolio and I’m sure you will love it! We call it Bokeh Photography...</p>
@@ -489,23 +489,22 @@
 		<!-- End Color Switcher -->
 		
 		<!-- Include all other Javascripts or include their minify version -->
-		<script src="assets/js/jquery-1.11.1.min.js"></script>
-		<script src="assets/js/jquery.migrate.js"></script>
-		<script src="assets/js/navigate.js"></script>
-		<script src="assets/js/ajax-loader.js"></script>
-		<script src="assets/js/jquery-ui.min.js"></script>
+		<%= javascript_include_tag "js/jquery-1.11.1.min.js" %>
+		<%= javascript_include_tag "js/jquery.migrate.js" %>
+		<%= javascript_include_tag "js/navigate.js" %>
+		<%= javascript_include_tag "js/ajax-loader.js" %>
+		<%= javascript_include_tag "js/jquery-ui.min.js" %>
 		<script src="https://maps.googleapis.com/maps/api/js"></script>
-		<script src="assets/js/bootstrap.min.js"></script>
-		<script src="assets/js/plugins-scroll.js"></script>
-		<script src="assets/js/jquery.fitvids.js"></script>
-		<script src="assets/js/owl.carousel.min.js"></script>
-		<script src="assets/js/imagesloaded.pkgd.min.js"></script>
-		<script src="assets/js/jquery.isotope.min.js"></script>
-		<script src="assets/js/waypoints.min.js"></script>
-		<script src="assets/js/jquery.magnific-popup.min.js"></script>
-		<script src="assets/js/classie.js"></script>
-		<script src="assets/js/mlpushmenu.js"></script>
-		<script src="assets/js/randomBlue.js"></script>
-		<script src="assets/js/scripts.js"></script>
-		<script src="assets/js/switcher.js"></script>
-	</body>
+		<%= javascript_include_tag "js/bootstrap.min.js" %>
+		<%= javascript_include_tag "js/plugins-scroll.js" %>
+		<%= javascript_include_tag "js/jquery.fitvids.js" %>
+		<%= javascript_include_tag "js/owl.carousel.min.js" %>
+		<%= javascript_include_tag "js/imagesloaded.pkgd.min.js" %>
+		<%= javascript_include_tag "js/jquery.isotope.min.js" %>
+		<%= javascript_include_tag "js/waypoints.min.js" %>
+		<%= javascript_include_tag "js/jquery.magnific-popup.min.js" %>
+		<%= javascript_include_tag "js/classie.js" %>
+		<%= javascript_include_tag "js/mlpushmenu.js" %>
+		<%= javascript_include_tag "js/randomBlue.js" %>
+		<%= javascript_include_tag "js/scripts.js" %>
+		<%= javascript_include_tag "js/switcher.js" %>
