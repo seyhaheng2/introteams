@@ -119,7 +119,7 @@ blockquote:after {
 body { 
 	padding-top: 120px;
 	font-family: "Open Sans", "Roboto Slab", "Noto Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	background: url(image_path('bgb_hd.jpg'));
+	background-image: image-url('27.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
