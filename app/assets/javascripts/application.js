@@ -11,7 +11,27 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery_ujs
-//= require turbolinks
-//= require bootstrap
-//= require_tree .
+//= require jquery-migrate
+//= require layerslider.kreaturamedia.jquery
+//= require jquery-easing
+//= require jquerytransit
+//= require layerslider.transitions
+//= require comment-reply
+//= require modernizr
+//= require bootstrap.min
+//= require imagesloaded.pkgd.min
+//= require mansonry.pkgd.min
+//= require jquery.flexslider-min
+//= require jquery.bxslider.min
+//= require jquery.prettyPhoto
+//= require waypoints.min
+//= require main
+//= require js_composer_front
+//= require jquery.ui.core.min
+//= require jquery.ui.widget.min
+//= require jquery.ui.tabs.min
+//= require jquery-ui-tabs-rotate
+//= require jcarousellite.min
+//= require jquery.prettyPhoto2
+//= require jquery.ui.accordion.min
+

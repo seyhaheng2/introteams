@@ -10,12 +10,18 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
+ *= require layerslider
+ *= require options
+ *= require bootstrap.min
+ *= require bootstrap-responsive.min
+ *= require flexslider
+ *= require jquery.bxslider
+ *= require main
+ *= require animate
  *= require font-awesome
+ *= require prettyPhoto
+ *= require js_composer_front
+ *= require custom
+ *= require prettyPhoto2
  *= require_self
  */
-
-
-
-
-

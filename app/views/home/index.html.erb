@@ -1,510 +1,498 @@
-
-	<body class="home onepage-home">		
-	
-		<!-- Header Section -->
-		<header>
-			<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-				<div class="container">
-					<div class="navbar-header">
-					
-						<!-- Responsive Menu Trigger -->
-						<a id="trigger" href="#" title="Menu"><i class="fa fa-bars"></i></a>
-						
-						<!-- Website Logo -->
-						<a class="navbar-brand" href="index.html">
-						<%= image_tag "light-logo-2.png", class: "logo"%>
-						<%= image_tag "light-logo.png", class: "logo2"%>
-						</a>
-					</div>
-					
-					<!-- Main Menu -->
-					<nav id="main-menu">
-						<div class="menu-container">
-							<ul>
-								<li class="menu-item drop">
-									<a href="#">Home</a>
-									<div class="menu-container">
-										<a class="mp-back" href="#">back</a>
-										<ul>
-											<li class="menu-item"><a href="home.html">MultiPage Version</a></li>
-											<li class="menu-item"><a href="index.html">OnePage Version</a></li>
-										</ul>
-									</div>
-								</li>
-								<li class="menu-item drop">
-									<a href="#">Blog</a>
-									<div class="menu-container">
-										<a class="mp-back" href="#">back</a>
-										<ul>
-											<li class="menu-item"><a href="blog-grid.html">Blog Grid</a></li>
-											<li class="menu-item"><a href="blog-list.html">Blog List</a></li>
-											<li class="menu-item drop">
-												<a href="#">Blog Single</a>
-												<div class="menu-container">
-													<a class="mp-back" href="#">back</a>
-													<ul>
-														<li class="menu-item"><a href="blog-single.html">Blog No Sidebar</a></li>
-														<li class="menu-item"><a href="blog-sidebar.html">Blog With Sidebar</a></li>
-														<li class="menu-item"><a href="blog-sidebar-2.html">Blog With Gallery</a></li>
-													</ul>
-												</div>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li class="menu-item drop">
-									<a href="#">Portfolio</a>
-									<div class="menu-container">
-										<a class="mp-back" href="#">back</a>
-										<ul>
-											<li class="menu-item">
-												<a href="portfolio-masonry.html">Portfolio Masonry</a>
-											</li>
-											<li class="menu-item">
-												<a href="portfolio-single.html">Portfolio Single</a>
-											</li>
-											<li class="menu-item">
-												<a href="portfolio-slideshow.html">Portfolio Slideshow</a>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li class="menu-item drop">
-									<a href="#">Pages</a>
-									<div class="menu-container">
-										<a class="mp-back" href="#">back</a>
-										<ul>
-											<li class="menu-item"><a href="about.html">About Us</a></li>
-											<li class="menu-item"><a href="services.html">Services</a></li>
-											<li class="menu-item"><a href="services-2.html">Services #2</a></li>
-											<li class="menu-item"><a href="contact.html">Contact Us</a></li>
-										</ul>
-									</div>
-								</li>
-								<li class="menu-item"><a href="#">Dark Version</a></li>
-							</ul>
-						</div>
-					</nav>
-					<!-- End Main Menu -->
-					
-					<ul class="navbar-right">
-						<!-- One Page Layout Navigation Buttons -->
-						<li id="ajax-b1"><a href="#" class="tmq_closeserv" title="Back to Home"><i class="fa fa-home"></i></a></li>
-						<li id="ajax-b2"><a href="#" class="link-index" title="Back to List"><i class="fa fa-th-large"></i></a></li>
-						<li id="ajax-b3"><a href="#" class="link-prev" title="Previous"><i class="fa fa-chevron-left"></i></a></li>
-						<li id="ajax-b4"><a href="#" class="link-next" title="Next"><i class="fa fa-chevron-right"></i></a></li>
-						<!-- End One Page Layout Navigation Buttons -->
-						
-						<!-- Search Button -->
-						<li id="search" data-toggle="popover"><a href="javascript:void(0);" class="top-search" title="Search"><i class="fa fa-search"></i></a></li>
-						<!-- End Search Button -->
-					</ul>
-				</div>
-			</div>
-		</header>
-		<!-- End Header -->
-		
-		<!-- Website Preloading for OnePage Version -->
-<!-- 		<div class="loading-content">
-			<div id="stage">
-				<p id="spinner"><img alt="loading" src="assets/loading.png"><BR><BR>Loading...</p>
-			</div>
-		</div> -->
-		<!-- End Preloading -->	
-		
-		<!-- Main Container Section -->	
-		<div class="container">
-			<div id="ajax-container">
-				
-				<!-- Content of Inner Pages Will Load Here with Ajax -->
-				<div id="page-content">
-
-				</div>
-				<!-- End Content of Inner Pages -->
-
-				<!-- Onepage Index Page Content -->
-				<div id="ajax-loader">
-					<div class="row">
-						<div class="col-md-12">
-						
-							<!-- FLIP MENU Container -->
-							<div class="row flip-menu">
-								
-								<!-- Flip Menu Item #1 -->
-								<div class="col-md-3 col-sm-6">
-									<div class="flip-item">
-										<div class="flip-wrapper">
-										
-											<!-- Front Side -->
-											<div class="flip-content">
-												<%= image_tag "p23.jpg"%>
-											</div>
-											
-											<!-- Back Side -->
-											<a href="portfolio-slideshow.html">
-												<div class="flip-hover-content">
-													<%= image_tag "p23.jpg"%>
-													<div class="overlay">
-														<h3>Portfolio Slideshow</h3>
-														<p>This is a sample project with OWL slideshow. Don't miss this new one page loading website!</p>
-														<i class="fa fa-arrow-right"></i>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-								
-								<!-- Flip Menu Item #2 -->
-								<div class="col-md-3 col-sm-6">
-									<div class="flip-item">
-										<div class="flip-wrapper">
-										
-											<!-- Front Side -->
-											<div class="flip-content iconned">
-												<div class="flip-inner">
-													<i class="fa fa-camera"></i>
-													<h3>Portfolio Masonry</h3>
-												</div>
-											</div>	
-											
-											<!-- Back Side -->
-											<a href="portfolio-masonry.html">
-												<div class="flip-hover-content iconned">
-													<div class="flip-inner">
-														<i class="fa fa-camera"></i>
-														<h3>Portfolio Masonry</h3>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-								
-								<!-- Flip Menu Item #3 -->
-								<div class="col-md-3 col-sm-6">
-									<div class="flip-item">
-										<div class="flip-wrapper">
-										
-											<!-- Front Side -->
-											<div class="flip-content">
-												<%= image_tag "p12.jpg"%>
-											</div>
-											
-											<!-- Back Side -->
-											<div class="flip-hover-content">
-												<%= image_tag "p12.jpg"%>
-												<div class="overlay">
-													<div class="spacer small"></div>
-													<p>You can put only an image without a link here. Of course if you don't have too much content<BR><BR> This <strong>white overlay</strong> is optional too. It's easy and flexible. Just imagine your content here...</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<!-- Flip Menu Item #4 -->
-								<div class="col-md-3 col-sm-6">
-									<div class="flip-item">
-										<div class="flip-wrapper">
-										
-											<!-- Front Side -->
-											<div class="flip-content iconned">
-												<div class="flip-inner">
-													<i class="fa fa-user"></i>
-													<h3>About Us</h3>
-												</div>
-											</div>
-											
-											<!-- Back Side -->
-											<a href="about.html">
-												<div class="flip-hover-content iconned">
-													<div class="flip-inner">
-														<i class="fa fa-user"></i>
-														<h3>About Us</h3>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-								
-								<!-- Flip Menu Item #5 -->
-								<div class="col-md-3 col-sm-6">
-									<div class="flip-item">
-										<div class="flip-wrapper">
-										
-											<!-- Front Side -->
-											<div class="flip-content iconned">
-												<div class="flip-inner">
-													<i class="fa fa-map-marker"></i>
-													<h3>Contact Us</h3>
-												</div>
-											</div>
-											
-											<!-- Back Side -->
-											<a href="contact.html">
-												<div class="flip-hover-content iconned">
-													<div class="flip-inner">
-														<i class="fa fa-map-marker"></i>
-														<h3>Contact Us</h3>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-								
-								<!-- Flip Menu Item #6 -->
-								<div class="col-md-3 col-sm-6">
-									<div class="flip-item">
-										<div class="flip-wrapper">
-										
-											<!-- Front Side -->
-											<div class="flip-content">
-												<%= image_tag "p17.jpg"%>
-											</div>
-											
-											<!-- Back Side -->
-											<a href="services-2.html">
-												<div class="flip-hover-content">
-													<%= image_tag "p17.jpg"%>
-													<div class="overlay">
-														<h3>Services Alternative</h3>
-														<p>This is another example of services page. We have various elements for services page.</p>
-														<i class="fa fa-arrow-right"></i>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-								
-								<!-- Flip Menu Item #7 -->
-								<div class="col-md-3 col-sm-6">
-									<div class="flip-item">
-										<div class="flip-wrapper">
-										
-											<!-- Front Side -->
-											<div class="flip-content iconned">
-												<div class="flip-inner">
-													<i class="fa fa-pencil"></i>
-													<h3>Blog</h3>
-												</div>
-											</div>
-											
-											<!-- Back Side -->
-											<a href="blog-grid.html">
-												<div class="flip-hover-content iconned">
-													<div class="flip-inner">
-														<i class="fa fa-pencil"></i>
-														<h3>Blog</h3>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-								
-								<!-- Flip Menu Item #8 -->
-								<div class="col-md-3 col-sm-6">
-									<div class="flip-item">
-										<div class="flip-wrapper">
-										
-											<!-- Front Side -->
-											<div class="flip-content">
-												<%= image_tag "p16.jpg"%>
-											</div>
-											
-											<!-- Back Side -->
-											<a href="blog-list.html">
-												<div class="flip-hover-content">
-													<%= image_tag "p16.jpg"%>
-													<div class="overlay">
-														<h3>Classic Blog Style</h3>
-														<p>A blog could be in grid or classic style. This one is the classic style. <strong>Click to see it!</strong></p>
-														<i class="fa fa-arrow-right"></i>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-								
-								<!-- Flip Menu Item #9 -->
-								<div class="col-md-3 col-sm-6">
-									<div class="flip-item">
-										<div class="flip-wrapper">
-										
-											<!-- Front Side -->
-											<div class="flip-content">
-												<%= image_tag "p22.jpg"%>
-											</div>
-											
-											<!-- Back Side -->
-											<a href="blog-sidebar.html">
-												<div class="flip-hover-content">
-													<%= image_tag "p22.jpg"%>
-													<div class="overlay">
-														<h3>Blog with Sidebar</h3>
-														<p>This is a blog with a featuring image on it. You may have image or slideshow on each post.</p>
-														<i class="fa fa-arrow-right"></i>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-								
-								<!-- Flip Menu Item #10 -->
-								<div class="col-md-3 col-sm-6">
-									<div class="flip-item">
-										<div class="flip-wrapper">
-										
-											<!-- Front Side -->
-											<div class="flip-content iconned">
-												<div class="flip-inner">
-													<i class="fa fa-rocket"></i>
-													<h3>Our Services</h3>
-												</div>
-											</div>
-											
-											<!-- Back Side -->
-											<a href="services.html">
-												<div class="flip-hover-content iconned">
-													<div class="flip-inner">
-														<i class="fa fa-rocket"></i>
-														<h3>Our Services</h3>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-								
-								<!-- Flip Menu Item #11 -->
-								<div class="col-md-3 col-sm-6">
-									<div class="flip-item">
-										<div class="flip-wrapper">
-										
-											<!-- Front Side -->
-											<div class="flip-content">
-												<%= image_tag "p18.jpg"%>
-											</div>
-											
-											<!-- Back Side -->
-											<a href="portfolio-2.html">
-												<div class="flip-hover-content">
-													<%= image_tag "p18.jpg"%>
-													<div class="overlay">
-														<h3>Portfolio Single</h3>
-														<p>A new project is risening up in our portfolio and I’m sure you will love it! We call it Bokeh Photography...</p>
-														<i class="fa fa-arrow-right"></i>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-								
-								<!-- Flip Menu Item #12 -->
-								<div class="col-md-3 col-sm-6">
-									<div class="flip-item">
-										<div class="flip-wrapper">
-										
-											<!-- Front Side -->
-											<div class="flip-content iconned">
-												<div class="flip-inner">
-													<i class="fa fa-shopping-cart"></i>
-													<h3>Buy Now!</h3>
-												</div>
-											</div>
-											
-											<!-- Back Side -->
-											<a href="http://themeforest.net/item/bokeh-html-template-for-blog-portfolio-business/9330975" class="noAjax">
-												<div class="flip-hover-content iconned">
-													<div class="flip-inner">
-														<i class="fa fa-heart"></i>
-														<h3>Buy Now!</h3>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- End FLIP MENU Container -->
-						</div>
-					</div>
-				</div>
-				<!-- End OnePage Index Page Content -->
-				
-			</div>
-		</div>
-		<!-- End Container -->
-		
-		<!-- Footer Section -->
-		<footer class="footer">
-			<div class="container">
-				<div class="footer-logo">Bokeh</div>
-				<div class="footer-copyright"><p class="text-muted">Copyright 2014. Bokeh Site Template</p></div>
-				<ul class="footer-social">
-					<li><a href="#" title="Follow on Facebook"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#" title="Follow on Twitter"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="#" title="Follow Pinterest"><i class="fa fa-pinterest"></i></a></li>
-					<li><a href="#" title="Follow Instagram"><i class="fa fa-instagram"></i></a></li>
-				</ul>
-			</div>
-		</footer>
-		<!-- End Footer -->
-		
-		<!-- Search box will be used in header PopOver -->
-		<div id="popover-content" class="hide">
-			<form class="sidebar-searchbox" method="get" action="#">
-				<input type="search" name="s" placeholder="Search and hit Enter!">
-			</form>
-		</div>
-		
-		<!-- Back to Top Button -->
-		<a href="#" id="back-to-top"><i class="fa fa-arrow-up"></i></a>
-		
-		<!-- Color Switcher - Only in Demo -->
-	<!-- 	<ul id="navigation">
-			<li><span><i class="fa fa-cogs"></i></span>
-				<div id="panel">
-					<div class="colour-container">
-						<h5>SAMPLE COLORS:</h5>				
-						<a class="style_1"></a>
-						<a class="style_2"></a>
-						<a class="style_3"></a>
-						<a class="style_4"></a>
-					</div><BR><BR>
-					<hr />
-					<div class="sw-width-container">
-						<a href="../index.html" class="premade">Other Demos</a>
-					</div>
-				</div>
-			</li>
-		</ul> -->
-		<!-- End Color Switcher -->
-		
-		<!-- Include all other Javascripts or include their minify version -->
-		<%= javascript_include_tag "js/jquery-1.11.1.min.js" %>
-		<%= javascript_include_tag "js/jquery.migrate.js" %>
-		<%= javascript_include_tag "js/navigate.js" %>
-		<%= javascript_include_tag "js/ajax-loader.js" %>
-		<%= javascript_include_tag "js/jquery-ui.min.js" %>
-		<script src="https://maps.googleapis.com/maps/api/js"></script>
-		<%= javascript_include_tag "js/bootstrap.min.js" %>
-		<%= javascript_include_tag "js/plugins-scroll.js" %>
-		<%= javascript_include_tag "js/jquery.fitvids.js" %>
-		<%= javascript_include_tag "js/owl.carousel.min.js" %>
-		<%= javascript_include_tag "js/imagesloaded.pkgd.min.js" %>
-		<%= javascript_include_tag "js/jquery.isotope.min.js" %>
-		<%= javascript_include_tag "js/waypoints.min.js" %>
-		<%= javascript_include_tag "js/jquery.magnific-popup.min.js" %>
-		<%= javascript_include_tag "js/classie.js" %>
-		<%= javascript_include_tag "js/mlpushmenu.js" %>
-		<%= javascript_include_tag "js/randomBlue.js" %>
-		<%= javascript_include_tag "js/scripts.js" %>
-		<%= javascript_include_tag "js/switcher.js" %>
+<div class=" fullbanner">
+   <div class="container">
+      <div class="container">
+         <div class="row">
+            <div class="span12">
+               <div class="wpb_row vc_row-fluid">
+                  <div class="vc_span12 wpb_column column_container">
+                     <div class="wpb_wrapper">
+                        <div class="wpb_layerslider_element wpb_content_element">
+                           <script type="text/javascript">var lsjQuery = jQuery;</script><script type="text/javascript" src="http://bliccathemes.com/mestro/wp-content/plugins/LayerSlider/js/layerslider.kreaturamedia.jquery.js?ver=4.6.0"></script>
+                           <script type="text/javascript" src="http://bliccathemes.com/mestro/wp-content/plugins/LayerSlider/js/jquery-easing-1.3.js?ver=1.3.0"></script>
+                           <script type="text/javascript" src="http://bliccathemes.com/mestro/wp-content/plugins/LayerSlider/js/jquerytransit.js?ver=0.9.9"></script>
+                           <script type="text/javascript">
+                              lsjQuery(document).ready(function() {
+                                if(typeof lsjQuery.fn.layerSlider == "undefined") { lsShowNotice('layerslider_1','jquery'); }
+                                else if(typeof lsjQuery.transit == "undefined" || typeof lsjQuery.transit.modifiedForLayerSlider == "undefined") { lsShowNotice('layerslider_1', 'transit'); }
+                                else {
+                                  lsjQuery("#layerslider_1").layerSlider({
+                                    width : '100%',
+                                    height : '505px',
+                                    responsive : true,
+                                    responsiveUnder : 1170,
+                                    sublayerContainer : 1170,
+                                    autoStart : true,
+                                    pauseOnHover : false,
+                                    firstLayer : 1,
+                                    animateFirstLayer : true,
+                                    randomSlideshow : false,
+                                    twoWaySlideshow : true,
+                                    loops : 0,
+                                    forceLoopNum : true,
+                                    autoPlayVideos : true,
+                                    autoPauseSlideshow : 'auto',
+                                    youtubePreview : 'maxresdefault.jpg',
+                                    keybNav : true,
+                                    touchNav : true,
+                                    skin : 'fullwidth',
+                                    skinsPath : 'http://bliccathemes.com/mestro/wp-content/plugins/LayerSlider/skins/',
+                                    navPrevNext : true,
+                                    navStartStop : false,
+                                    navButtons : false,
+                                    hoverPrevNext : true,
+                                    hoverBottomNav : false,
+                                    showBarTimer : false,
+                                    showCircleTimer : false,
+                                    thumbnailNavigation : 'hover',
+                                    tnWidth : 100,
+                                    tnHeight : 60,
+                                    tnContainerWidth : '60%',
+                                    tnActiveOpacity : 35,
+                                    tnInactiveOpacity : 100,
+                                    imgPreload : true,
+                                    yourLogo : false,
+                                    yourLogoStyle : 'left: 10px; top: 10px;',
+                                    yourLogoLink : false,
+                                    yourLogoTarget : '_self',
+                                    cbInit : function(element) { },
+                                    cbStart : function(data) { },
+                                    cbStop : function(data) { },
+                                    cbPause : function(data) { },
+                                    cbAnimStart : function(data) { },
+                                    cbAnimStop : function(data) { },
+                                    cbPrev : function(data) { },
+                                    cbNext : function(data) { }
+                                 });
+}
+});
+</script>
+<div class="ls-wp-fullwidth-container">
+   <div class="ls-wp-fullwidth-helper">
+      <div id="layerslider_1" class="ls-wp-container" style="width: 100%; height: 505px; margin: 0px auto; ">
+         <div class="ls-layer"  style="slidedirection: right; slidedelay: 4000; durationin: 1500; durationout: 1500; easingin: easeInOutQuint; easingout: easeInOutQuint; delayin: 0; delayout: 0; ">
+            <%= image_tag("sliderone1back.jpg", class: "ls-bg") %>
+            <%= image_tag("banner_img1.png", class: "ls-s-1", style: "position: absolute; top: 30px; left: 596px; slidedirection : bottom;   durationin : 3000; durationout : 1000; easingin : easeOutExpo; easingout : easeInOutQuint; delayin : 0; delayout : 0; showuntil : 0;") %>
+            <h3  class="ls-s-1" style="position: absolute; top:110px; left: 146.5px; slidedirection : top;  durationin : 300; durationout : 1000; easingin : easeOutExpo; easingout : easeInOutQuint; delayin : 1100; delayout : 0; showuntil : 0;  padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; font-family: MuseoSlab100Regular; font-size: 82px; color: #10b1df;  white-space: nowrap;"> THE </h3>
+            <h3  class="ls-s-1" style="position: absolute; top:185px; left: 146.5px; slidedirection : left;  durationin : 300; durationout : 1000; easingin : easeOutExpo; easingout : easeInOutQuint; delayin : 1400; delayout : 0; showuntil : 0;  padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; font-family: MuseoSlab100Regular; font-size: 82px; color: #9ec430;  white-space: nowrap;"> PREMIUM </h3>
+            <h3  class="ls-s-1" style="position: absolute; top:260px; left: 146.5px; slidedirection : bottom;  durationin : 300; durationout : 1000; easingin : easeOutExpo; easingout : easeInOutQuint; delayin : 1700; delayout : 0; showuntil : 0;  padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; font-family: MuseoSlab500Regular; font-size: 110px; color: #ff048c;  white-space: nowrap;"> THEME </h3>
+            <h3  class="ls-s-1" style="position: absolute; top:365px; left: 156.5px; slidedirection : fade;  durationin : 300; durationout : 1000; easingin : easeOutExpo; easingout : easeInOutQuint; delayin : 2000; delayout : 0; showuntil : 0;  padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; font-family: OpenSansRegular; font-size: 12px; color: #727272;  white-space: nowrap;"> SMALL SOLUTIONS IS A UNIQUE NEW WAY TO NAVIGATE ON THE WEB </h3>
+         </div>
+         <div class="ls-layer"  style="slidedirection: top; slidedelay: 4000; durationin: 1500; durationout: 1500; easingin: easeInOutQuint; easingout: easeInOutQuint; delayin: 0; delayout: 0; ">
+            <%= image_tag("sliderone2back.jpg", class: "ls-bg") %>
+            <%= image_tag("banner_lcd.png", class: "ls-s-1", style: "position: absolute; top: 155px; left: 186.5px; slidedirection : top;   durationin : 900; durationout : 1000; easingin : easeOutBounce; easingout : easeInExpo; delayin : 0; delayout : 0; showuntil : 0;") %>
+            <%= image_tag("banner_mac.png", class: "ls-s-1", style: "position: absolute; top: 315px; left: 436px; slidedirection : top;   durationin : 1500; durationout : 1000; easingin : easeOutBounce; easingout : easeInExpo; delayin : 600; delayout : 0; showuntil : 0;") %>
+            <%= image_tag("banner_ipad.png", class: "ls-s-1", style: "position: absolute; top: 315px; left: 146.5px; slidedirection : top;   durationin : 2100; durationout : 1000; easingin : easeOutBounce; easingout : easeInExpo; delayin : 1200; delayout : 0; showuntil : 0;") %>
+            <%= image_tag("banner_mb.png", class: "ls-s-1", style: "position: absolute; top: 382px; left: 696.5px; slidedirection : top;   durationin : 2700; durationout : 1000; easingin : easeOutBounce; easingout : easeInExpo; delayin : 1800; delayout : 0; showuntil : 0;") %>
+            <h3  class="ls-s-1" style="position: absolute; top:50px; left: 746.5px; slidedirection : top;  durationin : 300; durationout : 1000; easingin : easeOutExpo; easingout : easeInExpo; delayin : 1700; delayout : 0; showuntil : 0;  padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; font-family: MuseoSlab100Regular; font-size: 59px; color: #ffffff;  white-space: nowrap;"> POWERFULLY </h3>
+            <h3  class="ls-s-1" style="position: absolute; top:115px; left: 746.5px; slidedirection : top;  durationin : 600; durationout : 1000; easingin : easeInOutQuint; easingout : easeInExpo; delayin : 2000; delayout : 0; showuntil : 0;  padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; font-family: MuseoSlab100Regular; font-size: 68px; color: #ffffff;  white-space: nowrap;"> CREATIVITY </h3>
+            <h2  class="ls-s-1" style="position: absolute; top:175px; left: 746.5px; slidedirection : top;  durationin : 1300; durationout : 1000; easingin : easeOutExpo; easingout : easeInExpo; delayin : 2300; delayout : 0; showuntil : 0;  padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; font-family: MuseoSlab500Regular; font-size: 62px; color: #ffffff;  white-space: nowrap;"> WITH CLEAN </h2>
+            <h1  class="ls-s-1" style="position: absolute; top:235px; left: 746.5px; slidedirection : top;  durationin : 1800; durationout : 1000; easingin : easeOutExpo; easingout : easeInExpo; delayin : 2600; delayout : 0; showuntil : 0;  padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; font-family: MuseoSlab500Regular; font-size: 105px; color: #ffffff;  white-space: nowrap;"> DESIGN </h1>
+         </div>
+         <div class="ls-layer"  style="slidedirection: right; slidedelay: 3000; durationin: 1500; durationout: 1500; easingin: easeInOutQuint; easingout: easeInOutQuint; delayin: 0; delayout: 0; ">
+            <%= image_tag("sliderone3back.jpg", class: "ls-bg") %>
+            <h3  class="ls-s-1" style="position: absolute; top:102px; left: 100px; slidedirection : top;  durationin : 300; durationout : 1000; easingin : easeOutExpo; easingout : easeInOutQuint; delayin : 600; delayout : 0; showuntil : 0;  font-family: MuseoSlab100Regular; font-size: 54px; color: #10b1df;  white-space: nowrap;"> WE ARE </h3>
+            <h2  class="ls-s-1" style="position: absolute; top:89px; left: 332px; slidedirection : top;  durationin : 300; durationout : 1000; easingin : easeOutExpo; easingout : easeInOutQuint; delayin : 600; delayout : 0; showuntil : 0;  font-family: MuseoSlab500Regular; font-size: 66px; color: #ff9600;  white-space: nowrap;"> READY </h2>
+            <h3  class="ls-s-1" style="position: absolute; top:174px; left: 102px; slidedirection : top;  durationin : 300; durationout : 1000; easingin : easeOutExpo; easingout : easeInOutQuint; delayin : 900; delayout : 0; showuntil : 0;  font-family: MuseoSlab100Regular; font-size: 46px; color: #727272;  white-space: nowrap;"> TO </h3>
+            <h2  class="ls-s-1" style="position: absolute; top:167px; left: 185px; slidedirection : top;  durationin : 300; durationout : 1000; easingin : easeOutExpo; easingout : easeInOutQuint; delayin : 900; delayout : 0; showuntil : 0;  font-family: MuseoSlab500Regular; font-size: 56px; color: #9ec430;  white-space: nowrap;"> DESIGN </h2>
+            <h3  class="ls-s-1" style="position: absolute; top:176px; left: 415px; slidedirection : top;  durationin : 300; durationout : 1000; easingin : easeOutExpo; easingout : easeInOutQuint; delayin : 900; delayout : 0; showuntil : 0;  font-family: MuseoSlab100Regular; font-size: 46px; color: #727272;  white-space: nowrap;"> YOUR </h3>
+            <h1  class="ls-s-1" style="position: absolute; top:219px; left: 107px; slidedirection : top;  durationin : 300; durationout : 1000; easingin : easeOutExpo; easingout : easeInOutQuint; delayin : 1200; delayout : 0; showuntil : 0;  font-family: MuseoSlab500Regular; font-size: 98px; color: #ff048c;  white-space: nowrap;"> WEBSITE </h1>
+            <img class="ls-s-1"  src="http://bliccathemes.com/mestro/wp-content/uploads/2013/07/banner_img3.png"  style="position: absolute; top: 134px; left: 582px; slidedirection : right;   durationin : 900; durationout : 1000; easingin : easeOutExpo; easingout : easeInOutExpo; delayin : 900; delayout : 0; showuntil : 0; ">
+         </div>
+      </div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=" actionbox animated fadeInUp">
+   <div class="container">
+      <div class="container">
+         <div class="row">
+            <div class="span12">
+               <div class="wpb_row vc_row-fluid">
+                  <div class="vc_span12 text wpb_column column_container">
+                     <div class="wpb_wrapper">
+                        <div class=" wpb_text_column wpb_content_element animated">
+                           <div class="wpb_wrapper">
+                              <h2>WE ARE <span>PRESENTING</span> UNIQUE OUR NEW THEME <span>MESTRO</span></h2>
+                              <p>Fully functional, four random color options for titles and buttons, animation options more than +20 for elements that you have never seen before.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class=" services">
+   <div class="container">
+      <div class="container">
+         <div class="row">
+            <div class="span12">
+               <div class="wpb_row vc_row-fluid">
+                  <div class="vc_span3 wpb_column column_container">
+                     <div class="wpb_wrapper">
+                        <a href="">
+                           <div class="bounceInLeft-1 blind four-column blue animated">
+                              <img src="http://www.bliccathemes.com/mestro/wp-content/uploads/2013/07/globe1.png" alt="services" class="services-image" />
+                              <p class="box-text">4 RANDOM COLORS</p>
+                              <p>Lorem Ipsum is simply dummy text of the printing and printing industry unknown printer.</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="vc_span3 wpb_column column_container">
+                     <div class="wpb_wrapper">
+                        <a href="">
+                           <div class="bounceIn-1 blind four-column green animated">
+                              <img src="http://www.bliccathemes.com/mestro/wp-content/uploads/2013/07/airplane.png" alt="services" class="services-image" />
+                              <p class="box-text">ANIMATE EVERYTHING</p>
+                              <p>Lorem Ipsum is simply dummy text of the printing and printing industry unknown printer.</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="vc_span3 wpb_column column_container">
+                     <div class="wpb_wrapper">
+                        <a href="">
+                           <div class="bounceIn-1 blind four-column pink animated">
+                              <img src="http://www.bliccathemes.com/mestro/wp-content/uploads/2013/07/setting.png" alt="services" class="services-image" />
+                              <p class="box-text">ONE CLICK INSTALL</p>
+                              <p>Lorem Ipsum is simply dummy text of the printing and printing industry unknown printer.</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="vc_span3 wpb_column column_container">
+                     <div class="wpb_wrapper">
+                        <a href="">
+                           <div class="bounceInRight-1 blind four-column orange animated">
+                              <img src="http://www.bliccathemes.com/mestro/wp-content/uploads/2013/07/clock.png" alt="services" class="services-image" />
+                              <p class="box-text">24/7 LIVE SUPPORT</p>
+                              <p>Lorem Ipsum is simply dummy text of the printing and printing industry unknown printer.</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class=" grey-area">
+   <div class="container">
+      <div class="container">
+         <div class="row">
+            <div class="span12">
+               <div class="wpb_row vc_row-fluid">
+                  <div class="vc_span6 wpb_column column_container">
+                     <div class="wpb_wrapper">
+                        <div class="wpb_tabs wpb_content_element " data-interval="0">
+                           <div class="blogeffect6-1 blind wpb_wrapper wpb_tour_tabs_wrapper ui-tabs clearfix animated">
+                              <ul class="nav nav-tabs wpb_tabs_nav ui-tabs-nav clearfix">
+                                 <li><a href="#tab-1374002434-1-76">Think Creative</a></li>
+                                 <li><a href="#tab-1374002434-2-15">Development</a></li>
+                                 <li><a href="#tab-1374002537592-3-9">Our Work</a></li>
+                              </ul>
+                              <div class="tabs-style">
+                                 <div class="tab-content">
+                                    <div id="tab-1374002434-1-76" class="wpb_tab ui-tabs-panel wpb_ui-tabs-hide clearfix">
+                                       <div class=" wpb_text_column wpb_content_element animated">
+                                          <div class="wpb_wrapper">
+                                             <p><img class="size-full wp-image-1149 alignright" alt="tab_icon" src="http://www.bliccathemes.com/mestro/wp-content/uploads/2013/07/tab_icon.jpg" width="126" height="125" />The falcate consonant reveals itself as an astute factory to those who look. The waveless  kilogram reveals itself as The calendar of a rake becomes a sulkies quotation. Their industry was, in this moment, an awful effect.</p>
+                                             <p>Framed in a different way, few can name an unsaid bit that isn&#8217;t a distilled history.a wailing square to those who look. This is not to discredit the idea that a medicine is a step-grandfather.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div id="tab-1374002434-2-15" class="wpb_tab ui-tabs-panel wpb_ui-tabs-hide clearfix">
+                                       <div class=" wpb_text_column wpb_content_element animated">
+                                          <div class="wpb_wrapper">
+                                             <p>The pull of a ceiling becomes a lightsome van. The literature would have us believe that a smectic sharon is not but a creek. In recent years, they were lost without the scathing spy that composed their unshielded. The tray of a part becomes a creamy digger. In recent years, authors often misinterpret the numeric as a sternmost bow, when in actuality it feels more like a furthest weather.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div id="tab-1374002537592-3-9" class="wpb_tab ui-tabs-panel wpb_ui-tabs-hide clearfix">
+                                       <div class=" wpb_text_column wpb_content_element animated">
+                                          <div class="wpb_wrapper">
+                                             <p>A curving hospital&#8217;s mercury comes with it the thought that the thecate gymnast is a beam. A quotation is an untapped feet. A gravel army is an agreement of the mind. A kohlrabi can hardly be considered an unwished attention without also being a vegetable. A tulip is a deictic berry.</p>
+                                             <p>The bulldozer of a crib becomes a threadbare start. The zeitgeist contends that the cause of a parsnip becomes a gooey tortellini. The literature would have us believe that a stylar commission is not but a drain. A duck is a quiet from the right perspective. Authors often misinterpret the baby as an obscure success, when in actuality it feels more like a transposed revolve.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="vc_span6 wpb_column column_container">
+                     <div class="wpb_wrapper">
+                        <div class="blogeffect6-1 blind testimonial animated">
+                           <div class="testimonial_title">
+                              <span>Client</span> Say
+                              <span id="slider-next"></span>
+                              <span id="slider-prev"></span>
+                           </div>
+                           <ul class="bxslider client">
+                              <li>
+                                 <p>Appropriately empower dynamic leadership skills after business portals. Globally myocardinate interactive supply chains with distinctive quality vectors. Globally revolutionize global sources through interoperable services. Distinctively re-engineer revolutionary meta-services and premium architectures. Intrinsically incubate intuitive opportunities and real-time potentialities. Appropriately communicate one-to-one technology. </p>
+                                 <p class="client-name">John Doe</p>
+                              </li>
+                              <li>
+                                 <p>Appropriately empower dynamic leadership skills after business portals. Globally myocardinate interactive supply chains with distinctive quality vectors. Globally revolutionize global sources through interoperable services. Distinctively re-engineer revolutionary meta-services and premium architectures. Intrinsically incubate intuitive opportunities and real-time potentialities. Appropriately communicate one-to-one technology. </p>
+                                 <p class="client-name">Lecter</p>
+                              </li>
+                              <li>
+                                 <p>Appropriately empower dynamic leadership skills after business portals. Globally myocardinate interactive supply chains with distinctive quality vectors. Globally revolutionize global sources through interoperable services. Distinctively re-engineer revolutionary meta-services and premium architectures. Intrinsically incubate intuitive opportunities and real-time potentialities. Appropriately communicate one-to-one technology. </p>
+                                 <p class="client-name">Nicole</p>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class=" grey-area">
+   <div class="container">
+      <div class="container">
+         <div class="row">
+            <div class="span12">
+               <div class="wpb_row vc_row-fluid">
+                  <div class="vc_span4 wpb_column column_container">
+                     <div class="wpb_wrapper">
+                        <div class="blogeffect4-1 blind latestpost animated">
+                           <h3 class="latestpost">Latest <span class="text-green">Blog</span></h3>
+                           <div class="horizontal_line"></div>
+                           <div class="row">
+                              <div class="postdate">
+                                 <p class="small">July</p>
+                                 <p class="big">30</p>
+                                 <p class="small">2013</p>
+                              </div>
+                              <div class="posttext">
+                                 <h4><a href="http://bliccathemes.com/mestro/industrial-image-post/" rel="bookmark" title="Permanent Link to Mestro Welcomes You!">Mestro Welcomes You!</a></h4>
+                                 <p>Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy&hellip;</p>
+                              </div>
+                           </div>
+                           <div class="horizontal_line"></div>
+                           <div class="row">
+                              <div class="postdate">
+                                 <p class="small">July</p>
+                                 <p class="big">30</p>
+                                 <p class="small">2013</p>
+                              </div>
+                              <div class="posttext">
+                                 <h4><a href="http://bliccathemes.com/mestro/sample-post-with-standard-image/" rel="bookmark" title="Permanent Link to Sample Post with Standard Image">Sample Post with Standard Image</a></h4>
+                                 <p>Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy&hellip;</p>
+                              </div>
+                           </div>
+                           <div class="horizontal_line"></div>
+                           <div class="row">
+                              <div class="postdate">
+                                 <p class="small">July</p>
+                                 <p class="big">30</p>
+                                 <p class="small">2013</p>
+                              </div>
+                              <div class="posttext">
+                                 <h4><a href="http://bliccathemes.com/mestro/another-gallery-post/" rel="bookmark" title="Permanent Link to Another Gallery Post!">Another Gallery Post!</a></h4>
+                                 <p>Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy&hellip;</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="vc_span4 wpb_column column_container">
+                     <div class="wpb_wrapper">
+                        <div class="blogeffect4-1 blind wpb_teaser_grid wpb_content_element wpb_carousel columns_count_1 grid_layout-thumbnail_title_text thumbnail_title_text_vc_span12 columns_count_1_thumbnail_title_text wpb_teaser_grid_portfolio  animated">
+                           <div class="wpb_wrapper">
+                              <a href="#" class="prev"></a> <a href="#" class="next"></a>
+                              <div class="teaser_grid_container">
+                                 <ul class="wpb_thumbnails wpb_thumbnails-fluid clearfix" data-layout-mode="fitRows">
+                                    <li class="vc_span12">
+                                       <div class="overthumb">
+                                          <div class="post-thumb">
+                                             <a class="link_image prettyphoto" href="http://bliccathemes.com/mestro/wp-content/uploads/2013/07/port20.jpg" title="Three Months"><img width="896" height="599" src="http://bliccathemes.com/mestro/wp-content/uploads/2013/07/port20.jpg" class="attachment-full" alt="port20" /></a>
+                                             <div class="image-overlay">
+                                                <a href="http://bliccathemes.com/mestro/wp-content/uploads/2013/07/port20.jpg" data-rel="prettyPhoto" class="prettyPhoto lightzoom"><img src="http://bliccathemes.com/mestro/wp-content/themes/mestro/img/p_zoom.png" /></a>
+                                                <a href="http://bliccathemes.com/mestro/portfolio/three-months/" class="postlink"><img src="http://bliccathemes.com/mestro/wp-content/themes/mestro/img/p_link.png" /></a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <h5 class="post-title"><a class="link_title" href="http://bliccathemes.com/mestro/portfolio/three-months/" title="Permalink to Three Months">Three Months</a></h5>
+                                       <div class="entry-content">
+                                          <p>Lorem Ipsum is simply dummy text of the printing. Lorem Ipsum is simply dummy text&hellip;</p>
+                                       </div>
+                                    </li>
+                                    <li class="vc_span12">
+                                       <div class="overthumb">
+                                          <div class="post-thumb">
+                                             <a class="link_image prettyphoto" href="http://bliccathemes.com/mestro/wp-content/uploads/2013/07/port16.jpg" title="Corp Por"><img width="896" height="599" src="http://bliccathemes.com/mestro/wp-content/uploads/2013/07/port16.jpg" class="attachment-full" alt="port16" /></a>
+                                             <div class="image-overlay">
+                                                <a href="http://bliccathemes.com/mestro/wp-content/uploads/2013/07/port16.jpg" data-rel="prettyPhoto" class="prettyPhoto lightzoom"><img src="http://bliccathemes.com/mestro/wp-content/themes/mestro/img/p_zoom.png" /></a>
+                                                <a href="http://bliccathemes.com/mestro/portfolio/corp-por/" class="postlink"><img src="http://bliccathemes.com/mestro/wp-content/themes/mestro/img/p_link.png" /></a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <h5 class="post-title"><a class="link_title" href="http://bliccathemes.com/mestro/portfolio/corp-por/" title="Permalink to Corp Por">Corp Por</a></h5>
+                                       <div class="entry-content">
+                                          <p>Lorem Ipsum is simply dummy text of the printing. Lorem Ipsum is simply dummy text&hellip;</p>
+                                       </div>
+                                    </li>
+                                    <li class="vc_span12">
+                                       <div class="overthumb">
+                                          <div class="post-thumb">
+                                             <a class="link_image prettyphoto" href="http://bliccathemes.com/mestro/wp-content/uploads/2013/07/port12.jpg" title="Truth Hurtz"><img width="896" height="599" src="http://bliccathemes.com/mestro/wp-content/uploads/2013/07/port12.jpg" class="attachment-full" alt="port12" /></a>
+                                             <div class="image-overlay">
+                                                <a href="http://bliccathemes.com/mestro/wp-content/uploads/2013/07/port12.jpg" data-rel="prettyPhoto" class="prettyPhoto lightzoom"><img src="http://bliccathemes.com/mestro/wp-content/themes/mestro/img/p_zoom.png" /></a>
+                                                <a href="http://bliccathemes.com/mestro/portfolio/truth-hurtz/" class="postlink"><img src="http://bliccathemes.com/mestro/wp-content/themes/mestro/img/p_link.png" /></a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <h5 class="post-title"><a class="link_title" href="http://bliccathemes.com/mestro/portfolio/truth-hurtz/" title="Permalink to Truth Hurtz">Truth Hurtz</a></h5>
+                                       <div class="entry-content">
+                                          <p>Lorem Ipsum is simply dummy text of the printing. Lorem Ipsum is simply dummy text&hellip;</p>
+                                       </div>
+                                    </li>
+                                    <li class="vc_span12">
+                                       <div class="overthumb">
+                                          <div class="post-thumb">
+                                             <a class="link_image prettyphoto" href="http://bliccathemes.com/mestro/wp-content/uploads/2013/07/port15.jpg" title="Shekh Ma Shieraki"><img width="896" height="599" src="http://bliccathemes.com/mestro/wp-content/uploads/2013/07/port15.jpg" class="attachment-full" alt="port15" /></a>
+                                             <div class="image-overlay">
+                                                <a href="http://bliccathemes.com/mestro/wp-content/uploads/2013/07/port15.jpg" data-rel="prettyPhoto" class="prettyPhoto lightzoom"><img src="http://bliccathemes.com/mestro/wp-content/themes/mestro/img/p_zoom.png" /></a>
+                                                <a href="http://bliccathemes.com/mestro/portfolio/shekh-ma-shieraki/" class="postlink"><img src="http://bliccathemes.com/mestro/wp-content/themes/mestro/img/p_link.png" /></a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <h5 class="post-title"><a class="link_title" href="http://bliccathemes.com/mestro/portfolio/shekh-ma-shieraki/" title="Permalink to Shekh Ma Shieraki">Shekh Ma Shieraki</a></h5>
+                                       <div class="entry-content">
+                                          <p>Lorem Ipsum is simply dummy text of the printing. Lorem Ipsum is simply dummy text&hellip;</p>
+                                       </div>
+                                    </li>
+                                    <li class="vc_span12">
+                                       <div class="overthumb">
+                                          <div class="post-thumb">
+                                             <a class="link_image prettyphoto" href="http://bliccathemes.com/mestro/wp-content/uploads/2013/07/port13.jpg" title="Kal Vas Flam">
+                                             <img width="896" height="599" src="http://bliccathemes.com/mestro/wp-content/uploads/2013/07/port13.jpg" class="attachment-full" alt="port13" />
+                                             </a>
+                                             <div class="image-overlay">
+                                                <a href="http://bliccathemes.com/mestro/wp-content/uploads/2013/07/port13.jpg" data-rel="prettyPhoto" class="prettyPhoto lightzoom"><img src="http://bliccathemes.com/mestro/wp-content/themes/mestro/img/p_zoom.png" /></a>
+                                                <a href="http://bliccathemes.com/mestro/portfolio/kal-vas-flam/" class="postlink"><img src="http://bliccathemes.com/mestro/wp-content/themes/mestro/img/p_link.png" /></a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <h5 class="post-title"><a class="link_title" href="http://bliccathemes.com/mestro/portfolio/kal-vas-flam/" title="Permalink to Kal Vas Flam">Kal Vas Flam</a></h5>
+                                       <div class="entry-content">
+                                          <p>Lorem Ipsum is simply dummy text of the printing. Lorem Ipsum is simply dummy text&hellip;</p>
+                                       </div>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="vc_span4 wpb_column column_container">
+                     <div class="wpb_wrapper">
+                        <div class="blogeffect4-1 blind style-wrapper wpb_accordion wpb_content_element  not-column-inherit animated" data-collapsible=no data-active-tab="1">
+                           <div class="wpb_wrapper wpb_accordion_wrapper ui-accordion">
+                              <h3 class="entry-title wpb_accordion_heading"><span class="text-random2">We</span> are Best</h3>
+                              <div class="wpb_accordion_section group">
+                                 <h3 class="wpb_accordion_header ui-accordion-header"><a href="#mobile-application">Mobile Application</a></h3>
+                                 <div class="accordion-inner wpb_accordion_content ui-accordion-content clearfix">
+                                    <div class=" wpb_text_column wpb_content_element animated">
+                                       <div class="wpb_wrapper">
+                                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an that unknown printer took.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="wpb_accordion_section group">
+                                 <h3 class="wpb_accordion_header ui-accordion-header"><a href="#wordpress-themes">Wordpress Themes</a></h3>
+                                 <div class="accordion-inner wpb_accordion_content ui-accordion-content clearfix">
+                                    <div class=" wpb_text_column wpb_content_element animated">
+                                       <div class="wpb_wrapper">
+                                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an that unknown printer took.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="wpb_accordion_section group">
+                                 <h3 class="wpb_accordion_header ui-accordion-header"><a href="#graphic-work">Graphic Work</a></h3>
+                                 <div class="accordion-inner wpb_accordion_content ui-accordion-content clearfix">
+                                    <div class=" wpb_text_column wpb_content_element animated">
+                                       <div class="wpb_wrapper">
+                                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an that unknown printer took.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="wpb_accordion_section group">
+                                 <h3 class="wpb_accordion_header ui-accordion-header"><a href="#e-commerce">E-commerce</a></h3>
+                                 <div class="accordion-inner wpb_accordion_content ui-accordion-content clearfix">
+                                    <div class=" wpb_text_column wpb_content_element animated">
+                                       <div class="wpb_wrapper">
+                                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an that unknown printer took.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="wpb_accordion_section group">
+                                 <h3 class="wpb_accordion_header ui-accordion-header"><a href="#content-management">Content Management</a></h3>
+                                 <div class="accordion-inner wpb_accordion_content ui-accordion-content clearfix">
+                                    <div class=" wpb_text_column wpb_content_element animated">
+                                       <div class="wpb_wrapper">
+                                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an that unknown printer took.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class=" white-area">
+   <div class="container">
+      <div class="container">
+         <div class="row">
+            <div class="span12">
+               <div class="wpb_row vc_row-fluid">
+                  <div class="vc_span12 wpb_column column_container">
+                     <div class="wpb_wrapper">
+                        <div class="blogeffect6-1 blind clientslider animated">
+                           <ul class="slides">
+                              <li><img width="250" height="250" src="http://bliccathemes.com/mestro/wp-content/uploads/2013/07/envato_img.png" class="attachment-post-thumbnail wp-post-image" alt="envato_img" /></li>
+                              <li><img width="250" height="250" src="http://bliccathemes.com/mestro/wp-content/uploads/2013/07/wordpress-logo.png" class="attachment-post-thumbnail wp-post-image" alt="wordpress-logo" /></li>
+                              <li><img width="250" height="250" src="http://bliccathemes.com/mestro/wp-content/uploads/2013/07/html5-logo.png" class="attachment-post-thumbnail wp-post-image" alt="html5-logo" /></li>
+                              <li><img width="250" height="250" src="http://bliccathemes.com/mestro/wp-content/uploads/2013/07/drupal-logo.png" class="attachment-post-thumbnail wp-post-image" alt="drupal-logo" /></li>
+                              <li><img width="250" height="250" src="http://bliccathemes.com/mestro/wp-content/uploads/2013/07/css3-logo.png" class="attachment-post-thumbnail wp-post-image" alt="css3-logo" /></li>
+                              <li><img width="250" height="250" src="http://bliccathemes.com/mestro/wp-content/uploads/2013/07/jquery-logo.png" class="attachment-post-thumbnail wp-post-image" alt="jquery-logo" /></li>
+                              <li><img width="250" height="250" src="http://bliccathemes.com/mestro/wp-content/uploads/2013/07/joomla-logo.png" class="attachment-post-thumbnail wp-post-image" alt="joomla-logo" /></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
